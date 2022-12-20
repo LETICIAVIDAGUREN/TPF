@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Conexión a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Carga de Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!--Carga de Favicons-->
+    <!--Navegador Safari-->
+    <link rel="apple-touch-icon" href="ico/apple-touch-icon.png">
+    <!--Demás Navegadores-->
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+
+    <!--Carga de Boxicon-->
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    <!--Mi Estilos CSS-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--Título de la página-->
+    <title>leti</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header>
+        <!--Barra de Navegación-->
+        <nav>
+            <button class="nav-boton" onclick="accion()">Menú</button>
+            <a class="nav-enlace desaparece" href="index.html">
+                <span class="logo">barra movil</span>
+                <span class="logo"><i<i class='bx bxs-drink bx-flip-horizontal bx-tada' style='color:rgba(166,42,1,0.96)'  ></i>
+
+                    
+            </a>
+            <a class="nav-enlace desaparece" href="index.html">Inicio</a>
+            <a class="nav-enlace desaparece" href="about.html">Nosotros</a>
+            <a class="nav-enlace desaparece" href="servis.html">Servicios</a>
+            <a class="nav-enlace desaparece" href="producto.html">Productos</a>
+            <a class="nav-enlace desaparece" href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal-->
+    
+<!--Galeria de imagenes con efecto Overlay-->
+<div class="galeria">
+    <h1>Nuestros Servicios</h1>
+    <div class="linea">
+        <div class="contenedor-imagenes">
+            <div class="imagenes">
+                <img src="img/coctel3.jpg" alt="">
+                <div class="overlay">
+                    <h2>Casamiento</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/cocteles2.jpg" alt="">
+                <div class="overlay">
+                    <h2>Bautismo</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/coctel3.jpg" alt="">
+                <div class="overlay">
+                    <h2>15 años</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/cocteles2.jpg" alt="">
+                <div class="overlay">
+                    <h2>Familiares</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/coctel3.jpg" alt="">
+                <div class="overlay">
+                    <h2>Empresariales</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/cocteles2.jpg" alt="">
+                <div class="overlay">
+                    <h2>Picadas y Cenas</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/coctel3.jpg" alt="">
+                <div class="overlay">
+                    <h2>Barra de tragos</h2>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="img/cocteles2.jpg" alt="">
+                <div class="overlay">
+                    <h2>Mesa de dulce</h2>
+                </div>
+            </div>
+            <div class="imagenes"><div class="overlay">
+            </div>
+                <img src="img/coctel3.jpg" alt="">
+                <div class="overlay">
+                    <h2>Desayunos y Meriendas</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+ <!--Sección pie de página-->
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+           <figure>
+               <a href="#">
+                   <img src="img/logo.webp" alt="La pipol">
+               </a>
+           </figure>
+       </div>
+       <div class= "box">
+           <h2>SOBRE NOSOTROS</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+       </div>
+      <div class="box">
+          <h2>Seguinos</h2>
+          <div class="red-social">
+              <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+              <a href="#"> <i class='bx bxl-instagram-alt'></i></a>
+              <a href="#"><i class='bx bxl-twitter'></i></a>
+              <a href="#"><i class='bx bxl-whatsapp'></i></a>
+          </div>
+      </div>
+  </div>
+
+  <div class="grupo-2">
+     <small>&copy; 2021 <b>LOLA</b> Todos los Derechos Reservados.</small>
+
+  </div>       
+  </footer>
+ 
+    <!--Script para el collapse del Nav-->
+    <script>
+        function accion() {
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+    
+</body>
+</html>
